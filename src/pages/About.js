@@ -1,4 +1,4 @@
-import { Route, useNavigate } from 'react-router-dom';
+import { Route, useNavigate, Routes } from 'react-router-dom';
 
 // 嵌套路由
 import Offers from './Offers';
@@ -28,9 +28,9 @@ export default function About() {
         Recusandae, ad!
       </p>
       <button onClick={() => navigate('/products')}>查看所有课程</button>
-      {/* <Route path='/about/offers'>
-        <Offers />
-      </Route> */}
+      <Routes>
+        <Route path='offers' element={<Offers />} />
+      </Routes>
     </div>
   );
 }

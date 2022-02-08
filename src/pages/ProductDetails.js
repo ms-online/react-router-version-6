@@ -1,4 +1,4 @@
-import { Route, useParams } from 'react-router-dom';
+import { Route, useParams, Routes } from 'react-router-dom';
 
 // 嵌套路由
 import Offers from './Offers';
@@ -30,10 +30,9 @@ export default function ProductDetails() {
           </p>
         </div>
       </div>
-
-      {/* <Route path={`${path}/offers`}>
-        <Offers />
-      </Route> */}
+      <Routes>
+        <Route path='offers' element={<Offers />} />
+      </Routes>
     </div>
   );
 }
