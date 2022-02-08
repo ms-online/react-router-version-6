@@ -27,9 +27,9 @@ export default function About() {
         Recusandae, ad!
       </p>
 
-      <Route path='/about/offers'>
+      {/* <Route path='/about/offers'>
         <Offers />
-      </Route>
+      </Route> */}
     </div>
   );
 }
